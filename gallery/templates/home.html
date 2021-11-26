@@ -3,4 +3,8 @@
 {% block content %}
     {{ block.super }}
     <h3>Karibu,sana...</h3>
+
+    {% for post in posts %}
+        <h2>{{ post.image_name }}</h2>
+    {% endfor %}
 {% endblock %}

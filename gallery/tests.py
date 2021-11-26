@@ -15,3 +15,9 @@ class UserTest(TestCase):
         self.jude.save_user()
         users = User.objects.all()
         self.assertTrue(len(users) > 0)
+
+    # def test_delete_method(self, id):
+    #     if self.id == id:
+    #         self.delete_user()
+    #         users = User.objects.all()
+    #         self.assertTrue(len(users) == 0)

@@ -37,6 +37,9 @@ class location(models.Model):
         self.name = new.name
         self.save()
 
+    def __str__(self):
+        return self.name
+
 class Post(models.Model):
     # image =
     image_name = models.CharField(max_length=50)
@@ -49,4 +52,9 @@ class Post(models.Model):
     @classmethod
     def all_posts(cls):
         posts = cls.objects.all()
+        return posts
+
+    @classmethod
+    def search_by_title(cls, search_term):
+        posts = cls.objects.filter(image_name__icontains=search_term)
         return posts

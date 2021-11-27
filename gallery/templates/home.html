@@ -7,6 +7,11 @@
     {% for post in posts %}
     <h2>{{ post.image_name }}</h2>
     <p>{{ post.image_description }} -- {{ post.location }}</p>
+    <p>{{ post.pub_date }}</p>
+
+    <div class="col-md-4">
+        <img src="{{ post.image.url }}" class="img-responsive" alt="image">
+    </div>
 
     {% empty %}
     <div class="row">

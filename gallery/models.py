@@ -41,8 +41,8 @@ class location(models.Model):
         return self.name
 
 class Post(models.Model):
-    # image =
     image_name = models.CharField(max_length=50)
+    post_image = models.ImageField(upload_to = 'posts/', default='test')
     image_description = models.TextField(blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE,)
     category = models.ManyToManyField(category)

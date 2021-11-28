@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Nunito+Sans:wght@200;300;400;600&family=Nunito:ital,wght@0,400;0,700;1,200&family=Poppins:wght@100;300;500&display=swap');
 
 
+:root {
+    --primary-color: #1d3557;
+    --lighter-primary: #457b9d;
+    --light-blue: #a8dadc;
+    --faded-white: #f1faee;
+    --bright-pink: #e63946;
+
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif;
 }

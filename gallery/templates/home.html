@@ -12,7 +12,7 @@
           <!-- <img src="{{ post.post_image.url }}" class="img-responsive" alt="image"> -->
 
           <div class="col-md-4 my-4">
-            <a href="{}">
+            <a href="{% url 'post' post.id %}">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="{{ post.post_image.url }}" alt="Card image cap">
                 <div class="card-body">
@@ -23,7 +23,7 @@
                       <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
                       <!-- <a type="button" class="btn btn-sm btn-outline-secondary" >check</a> -->
                     </div>
-                    <small class="text-muted">{{ post.pub_date }} author: {{ post.category }}</small>
+                    <small class="text-muted">{{ post.pub_date }} author: {{ post.id }}</small>
                   </div>
                 </div>
               </div>

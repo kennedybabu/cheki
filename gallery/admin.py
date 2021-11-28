@@ -4,7 +4,7 @@ from .models import User, Post, category,location
 # Register your models here.
 
 class PostAdmin(admin.ModelAdmin):
-    filter_horizontal = ('category','location')
+    filter_horizontal = ('location',)
 
 # class UserAdmin(admin.ModelAdmin):
 #     filter_horizontal = ('location',)

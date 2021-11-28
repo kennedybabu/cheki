@@ -15,20 +15,25 @@ body {
     color: var(--faded-white);
 }
 
+
 body > div > div > div > div > div > a > h3 {
     color: var(--primary-color);    
 }
 
+
 body > div > div > div > div > div > a > p,
+body > div > div > div.col-md-4.right.d-flex.align-items-center > div > h2,
 body > div > div > div.col-md-4 > p,
 body > div > div > div.col-6.col-md-4.right.d-flex.align-items-center > div > h4,
 body > div > div > div.col-md-4.right.d-flex.align-items-center > div > h4 {
     color: var(--primary-color);
 }
 
+
 :hover a {
     text-decoration: none;
 }
+
 
 .navbar {
     background-color: transparent;
@@ -62,13 +67,16 @@ body > nav > div > div.navbar-header > a {
 clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
+
 .top {
     padding-left: 5rem;
 }
 
+
 .bottom {
     padding-left: 10rem;
 }
+
 
 .bigger {
     height: 380px;
@@ -81,6 +89,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
 
 
 .right {
@@ -96,16 +105,25 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     border: none;
     background-color: var(--bright-pink);
     color: var(--primary-color);
+    transform: scale(1);
+    transition: all ease-in .1s;
 }
 
+:hover.btn-primary {
+    background-color: var(--bright-pink);
+    transform: scale(1.05);
+
+}
 
 :hover a p {
     text-decoration: none;
 }
 
+
 .card {
     margin-top: 2rem;
 }
+
 
 .card-img-top {
     max-width: 100%;

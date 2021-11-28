@@ -13,9 +13,9 @@
                 <p>{{ post.image_description }}</p>
                 <p>author: {{ post.user.first_name }}</p>
                 <p>posted: {{ post.pub_date|timesince}}</p>
-                <!-- <p>{{ post }} {{ post.category }}</p> -->
+                <p>{{ post.location }} {{ post.category }}</p>
             </div>
         </div>
     </div>
-    location
+
 {% endblock %}

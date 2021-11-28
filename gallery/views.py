@@ -32,4 +32,5 @@ def post(request,post_id):
         post = Post.objects.get(id = post_id)
     except ObjectDoesNotExist:
         raise Http404()
+    print(post.location)
     return render(request, 'all_photos/post.html', {"post":post})

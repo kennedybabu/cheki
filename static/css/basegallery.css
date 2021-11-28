@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Nunito Sans', sans-serif;
-    background-color: var(--lighter-primary);
+    background-color: var(--light-blue);
     color: var(--faded-white);
 }
 
@@ -21,7 +21,7 @@ body > div > div > div > div > div > a > h3 {
 }
 
 body > div > div > div > div > div > a > p {
-    color: var(--faded-white);
+    color: var(--primary-color);
 }
 
 :hover a {
@@ -33,6 +33,7 @@ body > div > div > div > div > div > a > p {
     border: none;
     padding: .5rem 5rem;
 }
+
 
 body > nav > div > div.navbar-header > a {
     color: var(--primary-color);
@@ -47,7 +48,7 @@ body > nav > div > div.navbar-header > a {
     background-image: url(https://images.unsplash.com/photo-1543813092-6d825ed30039?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=541&q=80);
     background-position: bottom;
     background-size: cover;
-    border-radius: 15px;  
+    border-radius: 15px; 
 
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -72,6 +73,22 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-primary {
+    border-radius: 0;
+    border: none;
+    background-color: var(--bright-pink);
+    color: var(--primary-color);
+}
+
 
 :hover a p {
     text-decoration: none;

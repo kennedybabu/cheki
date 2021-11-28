@@ -12,17 +12,30 @@
 
 body {
     font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--lighter-primary);
+    color: var(--faded-white);
+}
+
+body > div > div > div > div > div > a > h3 {
+    color: var(--primary-color);    
+}
+
+body > div > div > div > div > div > a > p {
+    color: var(--faded-white);
+}
+
+:hover a {
+    text-decoration: none;
 }
 
 .navbar {
     background-color: transparent;
-    color: black;
     border: none;
     padding: .5rem 5rem;
 }
 
 body > nav > div > div.navbar-header > a {
-    color: black;
+    color: var(--primary-color);
     font-weight: 400;
     font-size: 2.5rem;
 }

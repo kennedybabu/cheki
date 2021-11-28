@@ -18,8 +18,14 @@ class User(models.Model):
         if self.id == id:
             self.delete()
 
-class category(models.Model):
-    name = models.CharField(max_length=30)
+class Category(models.Model):
+    name = models.CharField(max_length=30, default='')
+
+    def save_category(self):
+        self.save()
+
+    def delete_category(self):
+        self.delete()
 
     def __str__(self):
         return self.name
@@ -45,7 +51,7 @@ class Post(models.Model):
     post_image = models.ImageField(upload_to = 'posts/', default='test')
     image_description = models.TextField(blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE,)
-    category = models.ManyToManyField(category)
+    category = models.ManyToManyField(Category)
     location = models.ManyToManyField(location)
     pub_date = models.DateTimeField(auto_now_add=True)
 

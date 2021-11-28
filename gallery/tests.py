@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import User, Post, category
+from .models import User, Post, Category
 
 # Create your tests here.
 
@@ -27,7 +27,7 @@ class PostTestClass(TestCase):
         self.jude = User(first_name='jude', last_name='babu', email='jude@moringa.com')
         self.jude.save_user()
 
-        self.new_category = category(name='testing')
+        self.new_category = Category(name='testing')
         self.new_category.save()
 
         self.new_post = Post()
@@ -38,7 +38,7 @@ class PostTestClass(TestCase):
     def tearDown(self):
         User.objects.all().delete()
         Post.objects.all().delete()
-        category.objects.all().delete()
+        Category.objects.all().delete()
 
     def test_get_posts(self):
         all_posts = Post.all_posts()

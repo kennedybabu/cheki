@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -6,7 +7,6 @@ class User(models.Model):
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
     email = models.EmailField()
-    # posts = models.ManyToManyField(post)
 
     def __str__(self):
         return self.first_name
@@ -48,7 +48,7 @@ class location(models.Model):
 
 class Post(models.Model):
     image_name = models.CharField(max_length=50)
-    post_image = models.ImageField(upload_to = 'posts/', default='test')
+    post_image = CloudinaryField("image")
     image_description = models.TextField(blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE,)
     category = models.ManyToManyField(Category)
